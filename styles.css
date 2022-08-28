@@ -1,0 +1,185 @@
+/* Global */
+
+:root {
+  --body-bg-color: #dce4e3;
+  --green: #18c29c;
+  --light-green: #8ed7c6;
+  --light-grey: #dce4e3;
+  --text-color: #084236;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.nav-icon,
+.nav-user-icon,
+.nav-logo-toggle {
+  cursor: pointer;
+  outline: none;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.item {
+  transition: 0.4s;
+}
+
+/* Navbar */
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 78px;
+  height: 100vh;
+  background-color: var(--green);
+  padding: 20px 40px;
+  z-index: 100;
+  transition: 0.4s;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.nav-input {
+  width: 100%;
+  height: 50px;
+  background-color: var(--light-green);
+  margin-bottom: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  transition: 0.4s;
+}
+
+.nav-input:hover {
+  background-color: var(--light-grey);
+}
+
+.nav-input input {
+  position: absolute;
+  padding-left: 50px;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--text-color);
+}
+
+.nav-link {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 5px;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+
+.nav-link:hover {
+  background-color: var(--light-grey);
+}
+
+.nav-user {
+  position: absolute;
+  padding: 8px 14px;
+  bottom: 0;
+  left: 0;
+  width: 252px;
+  height: 60px;
+  background-color: var(--light-green);
+  display: flex;
+  align-items: center;
+}
+
+.nav-user-img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  margin-right: 9px;
+}
+
+.nav-user-icon {
+  width: 24px;
+  height: 24px;
+  margin: 14px;
+}
+
+.nav-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.occupation {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* Show Toggle */
+
+.show {
+  width: 250px;
+}
+
+.none {
+  transition: 0.3s;
+  display: none;
+}
+
+.left {
+  transform: translateX(172px);
+}
+
+/* Main */
+
+main {
+  margin-left: 78px;
+  padding: 18px;
+  background-color: var(--body-bg-color);
+  width: 100vw;
+  height: 100vh;
+  transition: 0.4s;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 38px;
+}

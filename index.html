@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="navbar" id="nav">
+      <div class="nav-logo">
+        <img
+          src="./images/logo.svg"
+          alt="Logo da Sidebar"
+          class="nav-logo-img item none"
+        />
+
+        <img
+          src="./images/menu.svg"
+          alt="Ícone da Sidebar"
+          class="nav-logo-toggle"
+          id="toggle"
+        />
+      </div>
+
+      <div class="nav-input">
+        <img src="./images/search.svg" alt="Ícone de busca" id="search" />
+        <input type="text" placeholder="Buscar" class="item none" />
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img
+                src="./images/grid.svg"
+                alt="Ícone de Grade"
+                class="nav-icon"
+              />
+              <span class="item none">Dashboard</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img src="./images/pet.svg" alt="Ícone de Pet" class="nav-icon" />
+              <span class="item none">Pets</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img
+                src="./images/user.svg"
+                alt="Ícone de Usuário"
+                class="nav-icon"
+              />
+              <span class="item none">Clientes</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img
+                src="./images/vet.svg"
+                alt="Ícone de Vets"
+                class="nav-icon"
+              />
+              <span class="item none">Vets</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img
+                src="./images/settings.svg"
+                alt="Ícone de Ajustes"
+                class="nav-icon"
+              />
+              <span class="item none">Ajustes</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-user">
+        <img
+          src="./images/photo.jpg"
+          alt="Imagem de perfil"
+          class="nav-user-img item none"
+        />
+
+        <div class="nav-name item none">
+          <span class="name">Eleanor Pena</span>
+          <span class="occupation">Veterinária</span>
+        </div>
+
+        <img
+          src="./images/log-out.svg"
+          alt="Ícone de Logout"
+          class="nav-user-icon"
+        />
+      </div>
+    </header>
+
+    <main id="main">
+      <h1>Dashboard</h1>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
